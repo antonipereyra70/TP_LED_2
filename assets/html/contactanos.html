@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/contactanos.css">
+        <title>Contáctanos</title>
+    </head>
+    <body>
+        <div class="cuadro">
+            <div class="encabezado">
+                <h1>Contáctanos</h1> 
+                <div class="atras">
+                    <a class="boton" href="../../index.html">Inicio</a>
+                </div>
+            </div>
+            <div class="container_datos">
+                <h3>Ingresa tus datos</h3>
+            </div>
+            <form>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Nombre <br>
+                                <input type="text" name="Nombre" placeholder="Nombre" id="name">
+                            </td>
+                            <td>
+                                Apellido <br>
+                                <input type="text" name="Apellido" placeholder="Apellido" id="surname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Correo <br>
+                                <input type="email" name="correo" placeholder="email" id="mail">
+                            </td>
+                            <td>
+                                Celular <br>
+                                <input type="tel" name="celular" placeholder="xxx-xxxxxxx" id="cel">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Horarios disponibles <br>
+                                <input type="time" required> a <input type="time" required>
+                            </td>
+                            <td>
+                                Consulta inicial <br>
+                                <textarea name="consulta" onkeyup="countChars(this)" id="cant"></textarea>
+                                <p class="text" id="charNum"> 0 (500 caracteres como maximo)</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="derecha">
+                    <input type="reset" name="Borrar" value="Borrar datos" class="boton">
+                    <input type="submit" name="Enviar" value="Confirmar" class="boton" onclick="return verificar()">
+                </div>
+            </form>
+        </div>
+        <script src="../js/Contacto.js"></script>
+    </body>
+</html>

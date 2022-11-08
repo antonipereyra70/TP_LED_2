@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/trabaja_con_nosotros.css  ">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?    family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?    family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <title>Trabaja con Nosotros</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1>Curriculum Vitae</h1>
+    <div class="container_buttom">
+      <div class="buttom">
+        <a href="../../index.html">Inicio</a>
+      </div>
+    </div>
+    <form action="#">
+      <div class="form-first">
+        <div class="details-personal">
+          <span class="title">Datos Personales</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label>Nombre completo</label>
+              <input type="text" placeholder="ingresar nombre" required>
+            </div>
+
+            <div class="input-field">
+              <label>Apellido</label>
+              <input type="text" placeholder="ingresar apellido" required>
+            </div>
+
+            <div class="input-field">
+              <label>Fecha de nacimiento</label>
+              <input type="date" required>
+            </div>
+
+            <div class="input-field">
+              <label>D.N.I</label>
+              <input type="text" placeholder="ingresar dni" required>
+            </div>
+
+            <div class="input-field">
+              <label>Numero de Telefono</label>
+              <input type="tel" placeholder="ingresar telefono" required>
+            </div>
+
+            <div class="input-field">
+              <label>Correo</label>
+              <input type="email" placeholder="ingresar correo" required>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="details-ID">
+          <span class="title">Formacion y Estudios</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label>Titulo Secundario</label>
+              <input type="text" placeholder="ingresar titulo obtenido" required>
+            </div>
+
+            <div class="input-field">
+              <label>Educacion Terciaria</label>
+              <input type="text" placeholder="ingresar educacion terciaria">
+            </div>
+
+            <div class="input-field">
+              <label>Conocimientos Informaticos</label>
+              <input type="text" placeholder="ingresar conocimientos">
+            </div>
+
+            <div class="input-field">
+              <label>Cursos</label>
+              <input type="text" placeholder="ingresar cursos">
+            </div>
+
+            <div class="input-field">
+              <label>Especialización</label>
+              <input type="text" placeholder="ingresar postitulos, master, etc" required>
+            </div>
+
+            <div class="input-field">
+              <label>Otro</label>
+              <input type="text" placeholder="ingresar otro" required>
+            </div>
+          </div>
+
+          <div class="details-address">
+            <span class="title">Experiencia Laboral</span>
+
+            <div class="fields">
+              <div class="input-field">
+                <label>Nombre de la Empresa</label>
+                <input type="text" placeholder="ingresar nombre de la empresa">
+              </div>
+
+              <div class="input-field">
+                <label>Puesto ocupado</label>
+                <input type="text" placeholder="ingresar puesto ocupado">
+              </div>
+
+              <div class="input-field">
+                <label>Nombre de la Empresa</label>
+                <input type="text" placeholder="ingresar nombre de la empresa" required>
+              </div>
+
+              <div class="input-field">
+                <label>Puesto ocupado</label>
+                <input type="text" placeholder="ingresar puesto ocupado">
+              </div>
+
+              <div class="input-field">
+                <label>Nombre de la Empresa</label>
+                <input type="text" placeholder="ingresar nombre de la empresa">
+              </div>
+
+              <div class="input-field">
+                <label>Puesto ocupado</label>
+                <input type="text" placeholder="ingresar puesto ocupado" required>
+              </div>
+            </div>
+          </div>
+          <div class="ultimo_div">
+            <span class="title">Adjunta tu foto y escribe una breve "Carta de Presentación"</span>
+          </div>
+
+          <button class="contenedorbtn-file">
+            Tu foto
+            <label for="btn-file"></label>
+            <input type="file" value="placeholder" id="btn-file">
+          </button>
+
+          <!--textarea-->
+          <div class="conteiner_texto">
+            <form>
+              <div class="textarea_style">
+                <textarea class="textarea" name="textarea_descripcion" id="textarea" cols="37" rows="4" maxlength="300"
+                  minlength="3" placeholder="carta de presentación..." onkeyup="countChars(this)" id="cant"></textarea>
+                  <p class="text" id="charNum"> 0 (500 caracteres como maximo)</p>
+              </div> <br>
+            </form>
+          </div>
+
+          <button class="contenedor-reset">
+            ↩Reset
+            <label for="btn-reset"></label>
+            <input type="reset" value="Reset" id="btn-reset">
+          </button>
+
+
+          <button class="contenedor-enviar">
+            ↪Enviar
+            <label for="btn-enviar"></label>
+            <input type="enviar" value="Enviar" id="btn-enviar">
+          </button>
+        </div>
+    </form>
+  </main>
+
+
+  <script src="../js/trabaja_con_nosotros.js"></script>
+</body>
+
+</html>
